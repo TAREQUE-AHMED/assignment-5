@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .header {
+            display: grid;
+            grid-template-columns: auto 1fr auto auto;
+            align-items: center;
+            background: white;
+            padding: 10px 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .logo {
+            display: flex;
+            align-items: center;
+            font-size: 24px;
+            font-weight: bold;
+        }
+        .logo img {
+            width: 40px;
+            margin-right: 10px;
+        }
+        .logo span {
+            color: #1a202c;
+            font-weight: bold;
+        }
+        .action-button {
+            display: flex;
+            align-items: center;
+            color: white;
+            padding: 8px 12px;
+            border-radius: 20px;
+            font-weight: bold;
+            border: none;
+            cursor: pointer;
+            margin-left: 10px;
+            background-color: aquamarine;
+        }
+       
+        .container-div{
+            background-color: #f4f4f4;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px;
+        }
+        .card {
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            margin: 10px;
+            width: 80%;
+            
+        }
+        h1 {
+            font-size: 18px;
+            color: #333;
+        }
+        p {
+            font-size: 16px;
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+    
+<header class="header">
+    <div class="logo">
+        <img src="assets/logo.png" alt="Logo"> <!-- Replace with actual logo image -->
+        <span>DevBoard</span>
+    </div>
+    <div></div> <!-- Empty div for spacing -->
+    
+    <button class="action-button">
+      Back to Desk
+    </button>
+</header>
+<section class="container-div">
+    <h1 style="font-weight: 800;">Blogs</h1>
+    <div class="card">
+        <h1>Question-1: What are the different ways to select an element in the DOM?</h1>
+        <p>
+            The different ways to select an element in the DOM include: <br>
+            1. <b>getElementById()</b>: Selects an element by its ID. <br>
+            2. <b>getElementsByClassName()</b>: Selects elements by class name. <br>
+            3. <b>getElementsByTagName()</b>: Selects elements by their tag name. <br>
+            4. <b>querySelector()</b>: Selects the first matching element using a CSS selector. <br>
+            5. <b>querySelectorAll()</b>: Selects all matching elements using a CSS selector. <br>
+            6. <b>getAttribute()</b>: Selects elements by attributes.
+        </p>
+    </div>
+    <div class="card">
+        <h1>Question-2: What is the difference between innerHTML, innerText, and textContent?</h1>
+        <p>
+            1. <b>innerHTML</b>: Retrieves or sets the HTML content (including tags) inside an element. <br>
+            2. <b>innerText</b>: Retrieves or sets the visible text inside an element, respecting styling. <br>
+            3. <b>textContent</b>: Retrieves or sets all the text content of an element, ignoring styling and hidden elements.
+        </p>
+    </div>
+    <div class="card">
+        <h1>Question-3: What is event delegation in the DOM?</h1>
+        <p>
+            Event delegation is a technique where an event listener is attached to a parent element instead of individual child elements. The listener catches events that bubble up from child elements, allowing for efficient handling of events, especially for dynamically added elements.
+        </p>
+    </div>
+    <div class="card">
+        <h1>Question-4: What is event bubbling in the DOM?</h1>
+        <p>
+            Event bubbling is the process where an event triggered on a target element propagates (bubbles) up to its ancestors in the DOM tree. The event is first captured by the innermost element, then moves upwards to its parent, grandparent, and so on.
+        </p>
+    </div>
+    <div class="card">
+        <h1>Question-5: How do you create, add, and remove elements using JavaScript?</h1>
+        <p>
+            1. <b>Create</b>: New elements can be created using <code>document.createElement()</code>. <br>
+            2. <b>Add</b>: Elements can be added to the DOM by appending them to existing elements. <br>
+            3. <b>Remove</b>: Elements can be removed from the DOM using <code>removeChild()</code> or <code>remove()</code>.
+        </p>
+    </div>
+     
+</section>
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+    // Select the action button
+    const actionButton = document.querySelector(".action-button");
+    
+    // Add event listener to handle click event
+    actionButton.addEventListener("click", function () {
+        window.location.href = "index.html"; // Redirect to index.html
+    });
+});
+
+</script>
+</body>
+</html>
