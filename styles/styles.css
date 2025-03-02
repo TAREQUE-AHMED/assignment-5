@@ -227,7 +227,7 @@
         margin-right: 20px;
     }
 
-    /* Activity Log on the right */
+    
     .activity-container {
         width: 300px;
         background: white;
@@ -236,9 +236,9 @@
         padding: 15px;
         text-align: center;
     }
-/* Base styles remain unchanged, add media queries below */
 
-/* For tablets and below */
+
+
 @media (max-width: 768px) {
     .header {
         grid-template-columns: 1fr 1fr 1fr;
@@ -251,7 +251,7 @@
     }
 
     .cards-container {
-        grid-template-columns: 1fr 1fr; /* 2 cards per row */
+        grid-template-columns: 1fr 1fr; 
         gap: 10px;
     }
 
@@ -266,15 +266,14 @@
     }
 }
 
-/* For mobile phones and below */
+
 @media (max-width: 480px) {
     body {
         padding: 10px;
     }
 
     .header {
-        grid-template-columns: 1fr; /* Stack all header items vertically */
-        text-align: center;
+        grid-template-columns: 1fr; 
         padding: 10px;
     }
 
@@ -289,8 +288,7 @@
     }
 
     .cards-container {
-        grid-template-columns: 1fr; /* 1 card per row */
-        gap: 10px;
+        grid-template-columns: 1fr; 
     }
 
     .task-section {
@@ -308,7 +306,7 @@
     }
 
     .card-footer {
-        display: block; /* Stack buttons vertically */
+        display: block; 
         gap: 10px;
         margin-top: 10px;
     }
